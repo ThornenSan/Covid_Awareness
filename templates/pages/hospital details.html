@@ -1,0 +1,563 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Covid Awareness</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Dental Health Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <!-- css files -->
+    <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' /><!-- bootstrap css -->
+    <link href="{% static 'css/style.css' %}" rel='stylesheet' /><!-- custom css -->
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet"><!-- fontawesome css -->
+    <!-- //css files -->
+
+    <!-- google fonts -->
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext"
+        rel="stylesheet">
+    <!-- //google fonts -->
+
+</head>
+
+<body>
+    <!-- top header -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="d-lg-flex header-w3_pvt">
+                        <li class="mr-lg-3">
+                            <span class="fa fa-envelope-open"></span>
+                            <a href="mailto:info@example.com" class="">info@example.com</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-phone"></span>
+                            <p class="d-inline">Call Us +12 345 678</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 header-right-w3_pvt">
+                    <ul class="d-lg-flex header-w3_pvt justify-content-lg-end">
+                        <li class="mr-lg-3">
+                            <span class=""><span class="fa fa-clock-o"></span>Mon - Fri : 8:30am to 9:30pm</span>
+                        </li>
+                        <li class="">
+                            <span class=""><span class="fa fa-clock-o"></span>Sat & Sun : 9:00am to 6:00pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //top header -->
+
+    <!-- //header -->
+    <header class="py-3">
+        <div class="container">
+            <div id="logo">
+                <h1> <a href="{% url 'index' %}"><span class="fa fa-stethoscope" aria-hidden="true"></span> Covid
+                        Awareness</a>
+                </h1>
+            </div>
+            <!-- nav -->
+            <nav class="d-lg-flex">
+
+                <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                <input type="checkbox" id="drop" />
+                <ul class="menu mt-2 ml-auto">
+                    <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                    <li class=""><a href="{% url 'details' %}">Hospital Details</a></li>
+                    <li class=""><a href="https://www.questionpro.com/t/ASUDzZleCk" target="_blank">Symtoms analysis</a>
+                    </li>
+                    <li class=""><a href="{% url 'contact' %}">Contact Us</a></li>
+                    <li class=""><a href="{% url 'register' %}">Register</a></li>
+                    <li class=""><a href="{% url 'login' %}">Login</a></li>
+
+                </ul>
+            </nav>
+            <div class="clear"></div>
+            <!-- //nav -->
+        </div>
+    </header>
+
+    <body>
+        <div class="container">
+            <div class="col-xm-12 col-sm-12 col-md-12">
+                <div class=" table-responsive">
+                    <table class="table" style="border-collapse:separate;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background-color:#0077c8;word-wrap:break-word;white-space: normal !important;">
+                                    Calmette Hospital</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="border-collapse: separate; border-spacing: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="border:none;">Address:</td>
+                                                <td style="border:none;">
+                                                    <span># 3, Monivong Blvd,</span>
+
+
+
+                                                    <span>, Phnom Penh</span>
+
+                                                    <span>, Cambodia.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Tel:</td>
+                                                <td style="border:none;">+855(0) 23 426 948</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="border:none;">Web:</td>
+                                                <td style="border:none;">
+                                                    <a class="btn-link zero_left_margin" target="_hospitals"
+                                                        rel="nofollow" href="http://www.calmette.gov.kh">Visit
+                                                        Website</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table" style="border-collapse:separate;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background-color:#0077c8;word-wrap:break-word;white-space: normal !important;">
+                                    Central Hospital</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="border-collapse: separate; border-spacing: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="border:none;">Address:</td>
+                                                <td style="border:none;">
+                                                    <span>82A Str. 154 (Techor Damdin)</span>
+                                                    <span>, Sangkat Psar Thmey 3</span>
+                                                    <span>, Khan Daun Penh</span>
+
+                                                    <span>, Phnom Penh</span>
+
+                                                    <span>, Cambodia.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Tel:</td>
+                                                <td style="border:none;">+855 23 214 966</td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table" style="border-collapse:separate;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background-color:#0077c8;word-wrap:break-word;white-space: normal !important;">
+                                    Khema Clinic &amp; Maternity</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="border-collapse: separate; border-spacing: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="border:none;">Address:</td>
+                                                <td style="border:none;">
+                                                    <span>18 St 528 Sangkai Boeung Kok 1</span>
+                                                    <span>, Kahn Toul kok</span>
+
+
+                                                    <span>, Phnom Penh</span>
+                                                    <span> 12151</span>
+                                                    <span>, Cambodia.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Tel:</td>
+                                                <td style="border:none;">+85512303212</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Fax:</td>
+                                                <td style="border:none;">+85523882447</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Web:</td>
+                                                <td style="border:none;">
+                                                    <a class="btn-link zero_left_margin" target="_hospitals"
+                                                        rel="nofollow" href="http://www.khemaclinic.com">Visit
+                                                        Website</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table" style="border-collapse:separate;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background-color:#0077c8;word-wrap:break-word;white-space: normal !important;">
+                                    MW
+                                    Medical (Cambodia) Pte. Ltd.</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="border-collapse: separate; border-spacing: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="border:none;">Address:</td>
+                                                <td style="border:none;">
+                                                    <span>Himawari Hotal Apt, 313 Sisowath Quay,</span>
+
+
+
+                                                    <span>, Phnom Penh</span>
+                                                    <span> 12207</span>
+                                                    <span>, Cambodia.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Tel:</td>
+                                                <td style="border:none;">+855 23 223 322</td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table" style="border-collapse:separate;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background-color:#0077c8;word-wrap:break-word;white-space: normal !important;">
+                                    Mercy Clinic</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="border-collapse: separate; border-spacing: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="border:none;">Address:</td>
+                                                <td style="border:none;">
+                                                    <span>17B&amp;C, St 296 Phnom</span>
+
+
+
+                                                    <span>, Phnom Penh</span>
+
+                                                    <span>, Cambodia.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Tel:</td>
+                                                <td style="border:none;">+855 23 677 1919</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="border:none;">Web:</td>
+                                                <td style="border:none;">
+                                                    <a class="btn-link zero_left_margin" target="_hospitals"
+                                                        rel="nofollow" href="https://mercymedcambodia.org">Visit
+                                                        Website</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table" style="border-collapse:separate;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background-color:#0077c8;word-wrap:break-word;white-space: normal !important;">
+                                    Princess Clinic</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="border-collapse: separate; border-spacing: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="border:none;">Address:</td>
+                                                <td style="border:none;">
+                                                    <span>132, street 122, Sangkat toek Laak 1</span>
+                                                    <span>, Khan Toul Kork</span>
+
+
+                                                    <span>, Phnom Penh</span>
+                                                    <span> na</span>
+                                                    <span>, Cambodia.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Tel:</td>
+                                                <td style="border:none;">+855 236 911 567</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="border:none;">Web:</td>
+                                                <td style="border:none;">
+                                                    <a class="btn-link zero_left_margin" target="_hospitals"
+                                                        rel="nofollow" href="http://www.clinicprincess.com">Visit
+                                                        Website</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table" style="border-collapse:separate;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background-color:#0077c8;word-wrap:break-word;white-space: normal !important;">
+                                    Raffles Medical Clinic - Phnom Penh</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="border-collapse: separate; border-spacing: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="border:none;">Address:</td>
+                                                <td style="border:none;">
+                                                    <span>Cambodia House</span>
+                                                    <span>, 161, Street 51</span>
+                                                    <span>, Sang-Kat Boeung Peng, Khon Doun Penh</span>
+
+                                                    <span>, Phnom Penh</span>
+
+                                                    <span>, Cambodia.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Tel:</td>
+                                                <td style="border:none;">+855 23 216 911</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Fax:</td>
+                                                <td style="border:none;">+855 23 215 811</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Web:</td>
+                                                <td style="border:none;">
+                                                    <a class="btn-link zero_left_margin" target="_hospitals"
+                                                        rel="nofollow"
+                                                        href="http://www.rafflesmedicalgroup.com/international-clinics/locations/cambodia/phnom-penh">Visit
+                                                        Website</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table" style="border-collapse:separate;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background-color:#0077c8;word-wrap:break-word;white-space: normal !important;">
+                                    Royal Phnom Penh Hospital (Royal Rattanak Hospital)</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="border-collapse: separate; border-spacing: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="border:none;">Address:</td>
+                                                <td style="border:none;">
+                                                    <span>No. 888, Russian Confederation Blvd.</span>
+                                                    <span>, Sangkat Toeuk Thla,</span>
+                                                    <span>, Khan Sen Sok,</span>
+
+                                                    <span>, Phnom Penh</span>
+
+                                                    <span>, Cambodia.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Tel:</td>
+                                                <td style="border:none;">+855 23 991000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="border:none;">Web:</td>
+                                                <td style="border:none;">
+                                                    <a class="btn-link zero_left_margin" target="_hospitals"
+                                                        rel="nofollow"
+                                                        href="http://www.royalphnompenhhospital.com">Visit Website</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table" style="border-collapse:separate;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background-color:#0077c8;word-wrap:break-word;white-space: normal !important;">
+                                    Sun Medical International Clinic</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="border-collapse: separate; border-spacing: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="border:none;">Address:</td>
+                                                <td style="border:none;">
+                                                    <span>No.18, street 302,Sangkant Boeung Keng K</span>
+
+
+
+                                                    <span>, Phnom Penh</span>
+
+                                                    <span>, Cambodia.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Tel:</td>
+                                                <td style="border:none;">+855-(0)23-956-777</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="border:none;">Web:</td>
+                                                <td style="border:none;">
+                                                    <a class="btn-link zero_left_margin" target="_hospitals"
+                                                        rel="nofollow" href="https://siclinic.com/en/service">Visit
+                                                        Website</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table" style="border-collapse:separate;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="background-color:#0077c8;word-wrap:break-word;white-space: normal !important;">
+                                    Sunrise Japan Hospital Phnom Penh</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="border-collapse: separate; border-spacing: 10px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="border:none;">Address:</td>
+                                                <td style="border:none;">
+                                                    <span>#177E, Kola Loum Street</span>
+
+
+
+                                                    <span>, Phnom Penh</span>
+                                                    <span> 121001</span>
+                                                    <span>, Cambodia.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none;">Tel:</td>
+                                                <td style="border:none;">+855 (0) 23-260-152</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="border:none;">Web:</td>
+                                                <td style="border:none;">
+                                                    <a class="btn-link zero_left_margin" target="_hospitals"
+                                                        rel="nofollow" href="http://www.sunrise-hs.com/">Visit
+                                                        Website</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

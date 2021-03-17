@@ -1,4 +1,4 @@
-
+from django.contrib.messages import constants as messages
 from pathlib import Path
 import os
 
@@ -22,6 +22,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
+    'accounts.apps.AccountsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -66,8 +67,11 @@ WSGI_APPLICATION = 'covid_awareness.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Covid_Awareness',
+        'USER': 'test',
+        'PASSWORD': '12345678',
+        'HOST': 'localhost'
     }
 }
 
@@ -114,3 +118,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     Path(BASE_DIR, 'covid_awareness/static')
 ]
+
+
+# Messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
